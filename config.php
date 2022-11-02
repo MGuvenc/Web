@@ -2,7 +2,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $database = "urunyonetim";
+    $database = "kitapsatis";
     //Bağlantı
     $conn = new mysqli($servername, $username, $password, $database);
     //Kontrol
