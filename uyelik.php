@@ -4,7 +4,7 @@
   include("config.php");
   /* Oturum Kontrolü */
   if(isset($_SESSION["mail"])){
-    echo '<meta http-equiv="refresh" content="0;url=home.php">';
+    echo '<meta http-equiv="refresh" content="0;url=index.php">';
   }else{
   
 ?>
@@ -14,7 +14,7 @@
     <title>Üyelik</title>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/uyelik.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
@@ -78,7 +78,7 @@
         echo '<div class="w3-panel w3-pale-green w3-round-large w3-border">
         <h3>Giriş Başarılı!</h3>
         <p>Yönlendiriliyorsunuz.</p>
-        </div><meta http-equiv="refresh" content="3;url=home.php">';
+        </div><meta http-equiv="refresh" content="3;url=index.php">';
         }else{
           echo '<div class="w3-panel w3-pale-red w3-round-large w3-border">
           <h3>Giriş Başarısız!</h3>
@@ -88,9 +88,9 @@
       }
     }
   ?>
-  </div>
+</div>
 </body>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src="js/index.js"></script>
+<script src="js/uyelik.js"></script>
 <html>
 <?php } ?>
