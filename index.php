@@ -18,6 +18,41 @@
     <header>
         <h1>2.EL KITAP SATISI</h1>
     </header>
+
+    <ul>
+        <li><a href="index.php">Ana Sayfa</a></li>
+        <li><a href="hakkimizda.php">Hakkımızda</a></li>
+        <li><a href="iletisim.php">İletişim</a></li>
+        <li><a href="sepet.php">Sepet</a></li>
+        <li><a href="profil.php"><?php echo $_SESSION["isim"]; ?></a></li>
+    </ul>
+
+    <nav>
+        <h3>KATEGORİLER</h3>
+        <a href="#">Kategori1</a>
+        <a href="#">Kategori2</a>
+        <a href="#">Kategori3</a>
+        <a href="#">Kategori4</a>
+    </nav>
+
+    <section>
+        <div class="kitap">a</div>
+        <div class="kitap">a</div>
+        <div class="kitap">a</div>
+        <div class="kitap">a</div>
+        <div class="kitap">a</div>
+        <div class="kitap">a</div>
+        <div class="kitap">a</div>
+        <div class="kitap">a</div>
+        <div class="kitap">a</div>
+        <div class="kitap">a</div>
+        <div class="kitap">a</div>
+        <div class="kitap">a</div>
+        <div class="kitap">a</div>
+        <div class="kitap">a</div>
+        <div class="temizle"></div>
+    </section>
+    <footer>MGuvenc</footer>
 </body>
 </html>
 <?php } ?>
