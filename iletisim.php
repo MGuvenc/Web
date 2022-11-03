@@ -39,9 +39,15 @@
     </nav>
     <section style="float: left;">
     <form action method="POST">
-    <textarea>Mesajınız..</textarea>
-    <button class="button button1" style="margin-left: 50px; background-color: #8DC26F; color: white;">GÖNDER</button>
+    <textarea placeholder="Mesajınız.." minlength="15" required></textarea>
+    <button class="button button1" name="butonI" style="margin-left: 50px; background-color: #8DC26F; color: white;">GÖNDER</button>
     </form>
+    <?php
+    if(isset($_POST["butonI"])){
+        echo "alert";
+    }
+
+    ?>
     </section>
     <footer>MGuvenc</footer>
 </body>
