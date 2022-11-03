@@ -38,19 +38,19 @@
         }
         ?>
     </nav>
-
+    
     <section>
         <?php
             if(!empty($_GET["id"])){
-                $sql = "INSERT INTO sepet (uye_id, urun_id) VALUES ('".$_SESSION["id"]."', '".$_GET["id"]."')";
+                $sql = "DELETE FROM sepet WHERE urun_id = ".$_GET['id']."";
                 if($conn->query($sql) === TRUE){
-                    echo '<div class="w3-panel w3-pale-green w3-round-large w3-border">
-                          <h3>Ürününüz Sepete Eklendi!</h3>
-                          <p>Alışverişinize Devam Edebilirsiniz.</p>
-                          </div>';
-                  } else {
+                    echo '<div class="w3-panel w3-pale-red w3-round-large w3-border">
+                      <h3>Ürününüz Sepetten Çıkarıldı!</h3>
+                      <p>Alışverişinize Devam Edebilirsiniz.</p>
+                      </div>';
+                }else {
                     echo "Error: " . $sql . "<br>" . $conn->error;
-                  }
+                }
             }
         $sql = mysqli_query($conn, "SELECT * FROM sepet WHERE uye_id='".$_SESSION["id"]."'");
         $i=0;
@@ -70,18 +70,16 @@
                 }
                 $toplam+=$row2["fiyat"];
             }
-
             if($toplam>0){
                 echo '<div class="w3-panel w3-pale-green w3-round-large w3-border">
                 <p>Sepetinizde toplam '.$toplam.' TL değerinde ürün bulunmaktadır.</p>
                 </div>';
-                }else{
-                    echo '<div class="w3-panel w3-pale-red w3-round-large w3-border">
-                              <h3>Sepetinizde ürün bulunmamaktadır!</h3>
-                              <p>Dilerseniz sepetinize ürün ekleyerek alışverişinize devam edebilirsiniz.</p>
-                              </div>';
-                }
-
+            }else{
+                echo '<div class="w3-panel w3-pale-red w3-round-large w3-border">
+                <h3>Sepetinizde ürün kalmadı!</h3>
+                <p>Diğer ürünlere bakmaya ne dersiniz?</p>
+                </div>';
+            }
         ?>
     </section>
     <footer>MGuvenc</footer>
