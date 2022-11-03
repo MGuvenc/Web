@@ -54,9 +54,11 @@ li a, nav a {
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
+    transition-duration: 0.4s;
 }
 li a:hover, nav a:hover {
     color: #f0f0f0;
+    background: #76b852;
 }
 section {
     width: 100% -100px;;
@@ -73,12 +75,48 @@ footer {
 }
 .kitap {
     width: 100px;
-    height: 175px;
+    height: 200px;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 10px 10px 10px;
     float: right;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 .temizle {
     clear: both;
 }
+.button {
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black;
+  }
+  
+  .button1:hover {
+    background-color: #76b852;
+    color: white;
+  }
+  .button2 {
+    background-color: white; 
+    color: black;
+  }
+  
+  .button2:hover {
+    background-color: rgb(231, 120, 120);
+    color: white;
+  }
+h5, h6{
+    width: 100%;
+    text-align: center;
+  }

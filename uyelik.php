@@ -76,6 +76,7 @@
         if( $count == 1 && $row['sifre']==$sifre){
         $_SESSION['mail'] = $row['mail'];
         $_SESSION['isim'] = $row['isim'];
+        $_SESSION['id'] = $row['id'];
         echo '<div class="w3-panel w3-pale-green w3-round-large w3-border">
         <h3>Giriş Başarılı!</h3>
         <p>Yönlendiriliyorsunuz.</p>
