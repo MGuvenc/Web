@@ -22,11 +22,11 @@
      </header> 
   
      <ul> 
-         <li><a href="index.php">Ana Sayfa</a></li> 
-         <li><a href="hakkimizda.php">Hakkımızda</a></li> 
+         <li><a href="index.php">Ana Sayfa</a></li>
          <li><a href="iletisim.php">İletişim</a></li> 
          <li><a href="sepet.php">Sepet</a></li> 
-         <li><a href="profil.php"><?php echo $_SESSION["isim"]; ?></a></li> 
+         <li><a href="#"><?php echo $_SESSION["isim"]; ?></a></li>
+         <li><a href="cikis.php">Çıkış</a></li>
      </ul> 
   
      <nav> 
